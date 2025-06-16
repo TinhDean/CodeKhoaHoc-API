@@ -1,0 +1,6 @@
+<h1><%= title %></h1>
+<form action="/items/edit/<%= item.id %>" method="POST">
+  Name: <input name="name" value="<%= item.name %>"><br>
+  Price: <input name="price" type="number" value="<%= item.price %>"><br>
+  <button type="submit">Update</button>
+</form>
