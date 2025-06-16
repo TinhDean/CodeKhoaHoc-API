@@ -2,10 +2,10 @@
 
 ## 🚀 Mục tiêu Project
 - Xây dựng backend NodeJS dùng Express
-- CRUD Items với MongoDB (Atlas)
-- Xác thực JWT (Register/Login)
-- Tài liệu API tự động bằng Swagger
-- Triển khai miễn phí trên Railway
+- Xác thực JWT: Đăng ký, Đăng nhập
+- CRUD Items (có Auth)
+- Swagger Docs tự động
+- Deploy miễn phí trên Railway
 
 ---
 
@@ -13,19 +13,21 @@
 
 | Tính năng | Method | URL | Mô tả |
 |---|---|---|---|
-| Đăng ký | POST | `/api/auth/register` | Đăng ký tài khoản mới |
-| Đăng nhập | POST | `/api/auth/login` | Đăng nhập lấy JWT |
-| Lấy Items | GET | `/api/items` | Lấy danh sách Items (PUBLIC) |
-| Thêm Item | POST | `/api/items` | Thêm Item (Cần JWT) |
-| Sửa Item | PUT | `/api/items/:id` | Sửa Item (Cần JWT) |
-| Xoá Item | DELETE | `/api/items/:id` | Xoá Item (Cần JWT) |
+| ✅ Đăng ký | POST | `/api/auth/register` | Đăng ký user |
+| ✅ Đăng nhập | POST | `/api/auth/login` | Lấy JWT |
+| ✅ Lấy Items | GET | `/api/items` | Công khai |
+| ✅ Thêm Item | POST | `/api/items` | Cần JWT |
+| ✅ Sửa Item | PUT | `/api/items/:id` | Cần JWT |
+| ✅ Xoá Item | DELETE | `/api/items/:id` | Cần JWT |
 
 ---
 
 ## 📑 Swagger API Docs
 
-- **Local:** [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
-- **Online Railway:** `https://<your-app>.up.railway.app/api-docs`
+| Môi trường | Link |
+|---|---|
+| ✅ Local | [http://localhost:3000/api-docs](http://localhost:3000/api-docs) |
+| ✅ Railway | *(Link online sau khi deploy)* |
 
 ---
 
